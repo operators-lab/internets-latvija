@@ -127,19 +127,19 @@
                         <td><strong>🚀 Starlink Satelīts</strong></td>
                         <td><strong>100 - 200 Mbps</strong></td>
                         <td><strong>Izcila</strong> (Neietekmē torņu attālums)</td>
-                        <td><strong>🥇 Vislabākā izvēle viensētām</strong></td>
+                        <td><strong>🥇 Vislabākā izvēle viensētām un mežainiem apvidiem</strong></td>
                     </tr>
                     <tr>
                         <td><strong>📱 LMT (Mobilais 4G/5G)</strong></td>
                         <td>1 - 15 Mbps (Tālu no torņa)</td>
-                        <td>Zema/Mainīga (Jāuzstāda ārējās antenas)</td>
-                        <td>Piemērots, ja tornis ir ļoti tuvu</td>
+                        <td>Zema/Mainīga (Atkarīga no noslodzes un torņa)</td>
+                        <td id="td-lmt-eval">Piemērots, ja tornis ir ļoti tuvu, ir labi sakari un tornis nav pārslogots</td>
                     </tr>
                     <tr>
                         <td><strong>📱 Tele2 / Bite (Mobilais)</strong></td>
                         <td>1 - 20 Mbps (Tālu no torņa)</td>
-                        <td>Zema/Mainīga (Atkarīgs no noslodzes)</td>
-                        <td>Piemērots ciematos un pilsētu tuvumā</td>
+                        <td>Zema/Mainīga (Atkarīga no noslodzes)</td>
+                        <td id="td-other-eval">Piemērots ciematos un pilsētu tuvumā</td>
                     </tr>
                 </tbody>
             </table>
@@ -220,6 +220,8 @@
                 slBtn: "👉 Pasūtīt Starlink & Saņemt 1 Mēnesi Bez Maksas →",
                 secLocal: "📊 Lauku Interneta Tehnoloģiju Salīdzinājums",
                 thOp: "Risinājums", thTech: "Vidējais Ātrums", thStab: "Stabilitāte Pierobežā / Laukos", thBest: "Mūsu Vērtējums",
+                tdLmtEval: "Piemērots, ja tornis ir ļoti tuvu, ir labi sakari un tornis nav pārslogots",
+                tdOtherEval: "Piemērots ciematos un pilsētu tuvumā",
                 secFaq: "❓ Biežāk Uzdotie Jautājumi un Tehniskās Nianses",
                 faqDataQ: "♾️ Vai Starlink piedāvā neierobežotus (bezlīmita) datus?", faqDataA: "Jā! Starlink Standard (Residential) plāns nodrošina <strong>pilnīgi neierobežotu datu apjomu</strong>. Nav nekādu mēneša patēriņa griestu — varat straumēt 4K video, lejupielādēt failus un turēt novērošanas kameras pieslēgtas 24/7 bez bažām.",
                 faqObsQ: "🌲 Vai koki un šķēršļi (Obstructions) ietekmē stabilitāti?", faqObsA: "Praksē pārbaudīts: pat ar aptuveni <strong>18% šķēršļu (Obstruction) līmeni</strong> viensētā apkārtējo koku dēļ, internets strādā <strong>nemainīgi stabili</strong> un reālajā lietošanā nekādi traucējumi nav manāmi.",
@@ -235,7 +237,7 @@
                 title: "📡 Best Internet for Rural & Border Areas in Latvia",
                 subtitle: "How to get internet in a countryside home where cell coverage fails.",
                 storyTitle: "📖 Real Experience: From 1 Mbps with 2 Antennas to Stable Starlink",
-                storyP1: "For many years I used LMT in the border area. The signal was <strong>extremely poor</strong> — barely getting 2G. To get any connection, I installed <strong>2 external antennas</strong> and spent months adjusting them daily. This cable nightmare dragged on for a <strong>whole year</strong> because cell towers were too far away.",
+                storyP1: "For many years I used LMT in the border area. The signal was <strong>extremely poor</strong> — barely getting 2G. To get any connection, I installed 2 external antennas and spent months adjusting them. This cable nightmare dragged on for a <strong>whole year</strong> because cell towers were too far away.",
                 storyP2: "Even with two external antennas, best speed was 5–10 Mbps, but mostly <strong>real speed was a weak 1 Mbps</strong>, making work and daily browsing impossible.",
                 storyP3: "Finally, I decided to buy a <strong>Starlink dish</strong>. The result? Now I have <strong>stable 100+ Mbps even in heavy snow and storms!</strong> Security cameras are connected, and there has been <strong>NOT A SINGLE DAY of connection loss</strong>.",
                 storyBox: "💡 Conclusion: If you are far from cell towers or in border zones, expensive 4G/5G antennas are a waste of time and money. Starlink is the only complete solution!",
@@ -250,6 +252,8 @@
                 slBtn: "👉 Order Starlink & Get 1 Month Free →",
                 secLocal: "📊 Rural Internet Technology Comparison",
                 thOp: "Solution", thTech: "Average Speed", thStab: "Stability in Rural Areas", thBest: "Our Rating",
+                tdLmtEval: "Suitable if a cell tower is very close, coverage is good, and the tower is not overloaded",
+                tdOtherEval: "Suitable for villages and areas close to cities",
                 secFaq: "❓ Frequently Asked Questions & Technical Details",
                 faqDataQ: "♾️ Does Starlink provide unlimited data?", faqDataA: "Yes! The Starlink Standard plan offers <strong>completely unlimited data</strong>. There are no monthly data caps — stream 4K video and keep security cameras online 24/7.",
                 faqObsQ: "🌲 Do trees and obstructions affect stability?", faqObsA: "Tested in practice: even with about <strong>18% Obstruction</strong> due to surrounding trees, the internet remains <strong>consistently stable</strong>.",
@@ -280,6 +284,8 @@
                 slBtn: "👉 Заказать Starlink и получить 1 месяц бесплатно →",
                 secLocal: "📊 Сравнение технологий интернета для загородных домов",
                 thOp: "Решение", thTech: "Средняя скорость", thStab: "Стабильность на хуторе", thBest: "Наша оценка",
+                tdLmtEval: "Подходит, если вышка очень близко, есть хорошая связь и вышка не перегружена",
+                tdOtherEval: "Подходит для поселков и рядом с городами",
                 secFaq: "❓ Часто задаваемые вопросы и технические нюансы",
                 faqDataQ: "♾️ Предоставляет ли Starlink безлимитный интернет?", faqDataA: "Да! Тариф Standard предоставляет <strong>полностью безлимитный трафик</strong> без ограничений по объему.",
                 faqObsQ: "🌲 Влияют ли деревья и препятствия (Obstructions) на стабильность?", faqObsA: "Проверено на практике: даже при уровне препятствий около <strong>18% (Obstruction)</strong> из-за деревьев, интернет работает <strong>стабильно</strong>.",
@@ -319,6 +325,8 @@
             document.getElementById('th-tech').innerHTML = t.thTech;
             document.getElementById('th-stab').innerHTML = t.thStab;
             document.getElementById('th-best').innerHTML = t.thBest;
+            document.getElementById('td-lmt-eval').innerHTML = t.tdLmtEval;
+            document.getElementById('td-other-eval').innerHTML = t.tdOtherEval;
             document.getElementById('sec-faq').innerHTML = t.secFaq;
             document.getElementById('faq-data-q').innerHTML = t.faqDataQ;
             document.getElementById('faq-data-a').innerHTML = t.faqDataA;
