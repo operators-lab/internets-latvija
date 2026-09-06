@@ -1,28 +1,367 @@
-
 <!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labākais Internets Latvijā | Salīdzinājums un Apskats</title>
+    <title>Labākais Internets Latvijā 2026 | Operatoru Salīdzinājums un Apskats</title>
+    <meta name="description" content="Kuru internetu izvēlēties Latvijā? Neatkarīgs optiskā un 5G/4G mobilā interneta salīdzinājums: Tet, LMT, Tele2, Bite un Baltcom.">
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f9; color: #333; }
-        .container { max-width: 800px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h1 { color: #0056b3; }
-        h2 { color: #333; border-bottom: 2px solid #0056b3; padding-bottom: 5px; }
-        .operator { background: #eef5ff; padding: 15px; border-left: 5px solid #0056b3; margin: 15px 0; border-radius: 4px; }
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #e2e8f0;
+            --accent-green: #10b981;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding-bottom: 60px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+        }
+
+        header p {
+            font-size: 1.15rem;
+            color: #94a3b8;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -30px auto 0;
+            padding: 0 20px;
+        }
+
+        .intro-box {
+            background: var(--card-bg);
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin: 40px 0 20px;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+        }
+
+        /* Comparison Table */
+        .table-wrapper {
+            overflow-x: auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f1f5f9;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Operator Cards Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .card ul {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        .card ul li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .card ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+
+        .pros-cons {
+            background: #f8fafc;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        /* Recommendation Section */
+        .recommendation {
+            background: linear-gradient(to right, #eff6ff, #e0f2fe);
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .recommendation h3 {
+            margin-bottom: 10px;
+            color: #1e3a8a;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .faq-item p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
     </style>
 </head>
 <body>
+
+    <header>
+        <h1>Labākais Internets Latvijā: Visaptverošs Ceļvedis</h1>
+        <p>Neatkarīgs apskats un padomi, kā izvēlēties piemērotāko mājas vai mobilā interneta pieslēgumu.</p>
+    </header>
+
     <div class="container">
-        <h1>Labākais Internets Latvijā: Kā Izvēlēties?</h1>
-        <p>Sveicināti! Šī ir neatkarīga pamācība un salīdzinājums, kas palīdzēs izvēlēties piemērotāko mājas vai mobilā interneta pieslēgumu Latvijā.</p>
-        
-        <h2>Galvenie Operatori</h2>
-        <div class="operator">
-            <h3>Optiskais un Mobilais Internets</h3>
-            <p>Drīzumā šeit būs detalizēts apraksts un salīdzinājums par Tet, LMT, Tele2 un Bite piedāvājumiem.</p>
+        <div class="intro-box">
+            <span class="badge">Atjaunināts 2026. gadā</span>
+            <p>Latvijā ir viens no ātrākajiem un pieejamākajiem interneta tīkliem Eiropā. Tomēr pareizā operatora un tehnoloģijas (Optika vs 5G/4G) izvēle ir atkarīga no jūsu atrašanās vietas un lietošanas paradumiem.</p>
+        </div>
+
+        <h2>Vispārējs Operatoru Salīdzinājums</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Operators</th>
+                        <th>Galvenā Tehnoloģija</th>
+                        <th>Stabilitāte</th>
+                        <th>Vislabāk piemērots</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Tet</strong></td>
+                        <td>Optiskais kabeļtīkls / DSL</td>
+                        <td>Izcila (Līdz 1 Gbit/s)</td>
+                        <td>Pilsētām, spēlēm, darbam no mājām</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LMT</strong></td>
+                        <td>5G / 4G Mobilais & Viedtv</td>
+                        <td>Ļoti augsta (Plaša 5G apdare)</td>
+                        <td>Laukiem, privātmājām, mobilam darbam</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tele2</strong></td>
+                        <td>5G / 4G Mobilais internets</td>
+                        <td>Augsta (Mūsdienīgs 5G tīkls)</td>
+                        <td>Izdevīgai cenai un ātram mobilajam tīklam</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bite</strong></td>
+                        <td>5G / 4G Mobilais & Optika</td>
+                        <td>Laba (Attīstās 5G)</td>
+                        <td>Kombinētajiem pakalpojumiem (TV + Mobilais)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Baltcom</strong></td>
+                        <td>Optika / Kabelis</td>
+                        <td>Laba (Pilsētu teritorijās)</td>
+                        <td>Kabeļtelevīzijas un interneta komplektiem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Detalizēts Operatoru Apskats</h2>
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3>Tet</h3>
+                    <p>Lielākais fiksētā interneta nodrošinātājs Latvijā.</p>
+                    <ul>
+                        <li>Optiskais internets ar ātrumu līdz 1 Gbit/s</li>
+                        <li>Neierobežots datu apjoms bez ātruma krituma</li>
+                        <li>Visstabilākais savienojums bez aizkaves (low ping)</li>
+                    </ul>
+                </div>
+                <div class="pros-cons">
+                    <strong>Ieteikums:</strong> Izvēlieties Tet optiku, ja tā ir pieejama jūsu ēkā.
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>LMT</h3>
+                    <p>Līderis mobilā tīkla pārklājumā un 5G attīstībā.</p>
+                    <ul>
+                        <li>Plašākais 5G tīkla pārklājums visā Latvijā</li>
+                        <li>Internets mājai ar 5G rūteri</li>
+                        <li>Lieliska stabilitāte arī ārpus pilsētām</li>
+                    </ul>
+                </div>
+                <div class="pros-cons">
+                    <strong>Ieteikums:</strong> Labākā izvēle privātmājām un lauku reģioniem.
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Tele2</h3>
+                    <p>Piedāvā lielisku cenas un ātruma attiecību.</p>
+                    <ul>
+                        <li>Ātrs un plašs 5G mobilais tīkls</li>
+                        <li>Vienkārša un ātra uzstādīšana ar bezvadu rūteri</li>
+                        <li>Izdevīgi piedāvājumi un akcijas</li>
+                    </ul>
+                </div>
+                <div class="pros-cons">
+                    <strong>Ieteikums:</strong> Lielisks līdzsvars starp izmaksām un ātrumu.
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Bite & Baltcom</h3>
+                    <p>Lieliski risinājumi kombinētajiem pakalpojumiem.</p>
+                    <ul>
+                        <li>Elastīgi tarifu plāni ģimenēm</li>
+                        <li>Televīzijas un interneta apvienotās paketes</li>
+                        <li>Strauja 5G infrastruktūras izaugsme</li>
+                    </ul>
+                </div>
+                <div class="pros-cons">
+                    <strong>Ieteikums:</strong> Izdevīgi, ja apvieno vairākus pakalpojumus pie viena operatora.
+                </div>
+            </div>
+        </div>
+
+        <h2>Kādu internetu izvēlēties?</h2>
+        <div class="recommendation">
+            <h3>Ātrās izvēles ceļvedis:</h3>
+            <p><strong>1. Ja dzīvojat dzīvoklī pilsētā:</strong> Viennozīmīgi meklējiet <em>Optisko internetu</em> (Tet vai Baltcom). Tas nodrošinās nemainīgu ātrumu neatkarīgi no tā, cik kaimiņu vienlaikus izmanto tīklu.</p>
+            <br>
+            <p><strong>2. Ja dzīvojat privātmājā vai laukos:</strong> Izvēlieties <em>5G bezvadu internetu</em> (LMT, Tele2 vai Bite). Pirms līguma slēgšanas ieteicams paņemt rūteri uz izmēģinājuma laiku, lai pārbaudītu, kura operatora tornis ir tuvāk jūsu mājai.</p>
+        </div>
+
+        <h2>Biežāk Uzdotie Jautājumi (FAQ)</h2>
+        <div class="faq-item">
+            <h4>Vai 5G internets var aizstāt optisko internetu?</h4>
+            <p>Jā, 5G spēj nodrošināt 100-500 Mbps ātrumu, kas ir pilnīgi pietiekami 4K video straumēšanai un darbam. Tomēr optiskais internets joprojām ir stabilāks un ar zemāku aizkavi (ping).</p>
+        </div>
+        <div class="faq-item">
+            <h4>Kā pārbaudīt, kurš ir labākais internets manā adresē?</h4>
+            <p>Gandrīz katram operatoram mājaslapā ir pieejama pārklājuma karte un adrešu pārbaudes rīks. Vislabāk ir izmēģināt bezvadu rūteri uz pāris dienām bez saistībām.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Kas ir ping (aizkave) un kāpēc tas ir svarīgs?</h4>
+            <p>Ping mēra laiku, cik ātri dati nonāk līdz serverim un atpakaļ. Zems ping (zem 20 ms) ir ļoti svarīgs tiešsaistes datorspēlēm un videozvaniem.</p>
         </div>
     </div>
+
+    <footer>
+        <p>© 2026 Operators Lab | Neatkarīgs interneta pakalpojumu apskats Latvijā</p>
+    </footer>
+
 </body>
 </html>
