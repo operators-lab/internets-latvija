@@ -37,10 +37,10 @@
         .starlink-card h2 { color: #fef08a; font-size: 1.8rem; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
         .starlink-card p, .starlink-card li { font-size: 0.98rem; color: #cbd5e1; }
         .starlink-card ul { list-style: none; margin: 15px 0; }
-        .starlink-card ul li { margin-bottom: 10px; padding-left: 24px; position: relative; }
-        .starlink-card ul li::before { content: "★"; position: absolute; left: 0; color: var(--starlink-gold); }
-        .promo-btn { display: inline-block; background: #f59e0b; color: #0f172a; font-weight: 800; font-size: 1.1rem; padding: 14px 28px; border-radius: 8px; text-decoration: none; margin-top: 15px; transition: 0.2s; text-align: center; }
-        .promo-btn:hover { background: #fbbf24; transform: translateY(-2px); }
+        .starlink-card ul li { margin-bottom: 10px; padding-left: 28px; position: relative; }
+        .starlink-card ul li::before { content: "⭐"; position: absolute; left: 0; top: 2px; }
+        .promo-btn { display: inline-block; background: #f59e0b; color: #0f172a; font-weight: 800; font-size: 1.15rem; padding: 16px 30px; border-radius: 8px; text-decoration: none; margin-top: 15px; transition: 0.2s; text-align: center; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3); }
+        .promo-btn:hover { background: #fbbf24; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(245, 158, 11, 0.4); }
 
         /* Story Section */
         .story-card { background: #fff; border-left: 5px solid #2563eb; border-radius: 12px; padding: 30px; margin-bottom: 35px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); }
@@ -71,8 +71,8 @@
             <button class="lang-btn" onclick="setLanguage('en')">EN</button>
             <button class="lang-btn" onclick="setLanguage('ru')">RU</button>
         </div>
-        <h1 id="title">Labākais Internets Laukiem un Pierobežai</h1>
-        <p id="subtitle">Kā iegūt mobilajam tīklam nepieejamu internetu viensētā vai lauku mājā, kur mobilie torņi ir pārāk tālu.</p>
+        <h1 id="title">📡 Labākais Internets Laukiem un Pierobežai</h1>
+        <p id="subtitle">Kā iegūt stabilu un ātru internetu viensētā vai lauku mājā, kur mobilie torņi ir pārāk tālu.</p>
     </header>
 
     <div class="container">
@@ -80,22 +80,22 @@
         <!-- STARLINK SPECIAL SECTION (FIRST) -->
         <div class="starlink-card">
             <h2 id="sl-title">🚀 Starlink Satelīta Internets Latvijā</h2>
-            <p id="sl-desc">Starlink nodrošina ātru un mobilajam tīklam nepakļautu internetu jebkurā vietā Latvijā. Pasūtīšanu varat veikt paši – nekādi starpnieki vai dārgi partneri nav vajadzīgi!</p>
+            <p id="sl-desc">Starlink nodrošina <strong>ātru un mobilajam tīklam nepakļautu internetu</strong> jebkurā vietā Latvijā. Pasūtīšanu varat veikt paši – <strong>nekādi starpnieki vai dārgi partneri nav vajadzīgi!</strong></p>
             
             <ul>
-                <li id="sl-feat-1"><strong>Valoda:</strong> Starlink atbalsts ir angļu/krievu valodā (ja saprotat tikai latviski, var izmantot tulkotāju).</li>
-                <li id="sl-feat-2"><strong>Uzstādīšana:</strong> Antenu uzstādīt caur lietotni ir ļoti vienkārši un ātri.</li>
-                <li id="sl-feat-3"><strong>Kabeļu nianses:</strong> Mini modelim starp antenu un rūteri var būt nepieciešams papildu LAN vads. Savukārt, ja izvēlaties <strong>4X (Standard)</strong> modeli, klāt papildus nekādi vadi nav jāpērk!</li>
-                <li id="sl-feat-4"><strong>Cenas un Īre:</strong> Starlink sākotnēji piedāvā īri. Par ~100 Mbps ātrumu pakalpojums maksā 35 €/mēn. + 10 €/mēn. ierīces īre (kopā ~45 €/mēn. Par 4X modeli tie ir 45 € + 10 € īre).</li>
-                <li id="sl-feat-5"><strong>Īpašais triks par izpirkšanu:</strong> Sazinoties ar Starlink supportu jau pirmajā mēnesī, izdevās saskaņot izpirkšanu uzreiz. Viņi izskaidroja, ka ierīce vairs automātiski nepāriet īpašumā pēc 12 mēnešiem (kā tas bija agrāk), taču viņi var sagatavot atsevišķu rēķinu, lai Mini komplektu uzreiz izpirktu par <strong>199 €</strong> ar oficiālu 2 gadu garantiju!</li>
+                <li id="sl-feat-1"><strong>Valoda:</strong> Atbalsts un serviss ir angļu/krievu valodā (ja saprotat tikai latviski, var viegli izmantot tulkotāju).</li>
+                <li id="sl-feat-2"><strong>Vienkārša Uzstādīšana:</strong> Antenu uzstādīt caur lietotni ir <strong>ļoti vienkārši un ātri</strong> – nekādu meistaru!</li>
+                <li id="sl-feat-3"><strong>Kabeļu nianses:</strong> Mini modelim var būt nepieciešams papildu LAN vads. Savukārt, izvēloties <strong>4X (Standard)</strong> modeli, <strong>nekādi papildu vadi nav jāpērk!</strong></li>
+                <li id="sl-feat-4"><strong>Elastīgas Cenas:</strong> Par ~100 Mbps pakalpojums maksā 35 €/mēn. + 10 € īre (kopā ~45 €/mēn.). Par 4X modeli – 45 € + 10 € īre.</li>
+                <li id="sl-feat-5"><strong>Īpašais triks par izpirkšanu:</strong> Sazinoties ar Starlink supportu pirmajā mēnesī, izdevās saskaņot <strong>izpirkšanu uzreiz</strong>. Viņi izveido atsevišķu rēķinu, lai Mini komplektu uzreiz izpirktu par <strong>199 €</strong> ar <strong>2 gadu garantiju!</strong></li>
             </ul>
 
             <div style="text-align: center; margin-top: 25px;">
-                <p id="sl-promo-text" style="color: #fef08a; font-weight: bold; margin-bottom: 10px;">
-                    🎁 ĪPAŠAIS PIEDĀVĀJUMS: Pasūti caur mūsu saiti un saņem 1 mēnesi bez maksas (pēc 30 dienām no aktivizācijas)!
+                <p id="sl-promo-text" style="color: #fef08a; font-weight: bold; margin-bottom: 10px; font-size: 1.05rem;">
+                    🎁 ĪPAŠAIS PIEDĀVĀJUMS: Pasūti caur mūsu saiti un saņem 1 MĒNESI BEZ MAKSAS (pēc 30 dienām no aktivizācijas)!
                 </p>
                 <a href="https://bit.ly/stabilsinternets" target="_blank" class="promo-btn" id="sl-btn">
-                    Pasūtīt Starlink & Saņemt 1 Mēnesi Bez Maksas →
+                    👉 Pasūtīt Starlink & Saņemt 1 Mēnesi Bez Maksas →
                 </a>
             </div>
         </div>
@@ -103,15 +103,15 @@
         <!-- PERSONAL STORY SECTION (AFTER PROMO) -->
         <div class="story-card">
             <h2 id="story-title">📖 Reāla Pieredze: No 1 Mbps ar 2 Antenām līdz Stabilam Starlink</h2>
-            <p id="story-p1">Daudzus gadus pierobežā izmantoju LMT pakalpojumus. Sakaru situācija bija ļoti smaga — 2G tīkls tikko vilka, un, lai mājā vispār dabūtu kādu internetu, nācās uzstādīt 2 ārējās antenas. Mēnešiem ilgi tās nācās grozīt, pa dienu pavēršot pret vienu torni, vakarā pret citu. Viss šis kabeļu un antenu murgs vilkās veselu gadu, jo mobilie torņi atradās pārāk tālu un tuvāk neviena cita operatora nebija.</p>
-            <p id="story-p2">Pat ar divām papildu antenām izdevās izspiest labākajā gadījumā 5–10 Mbps (un tikai tad, ja mājās neviens cits internetu nelietoja). Pārsvarā reālais ātrums svārstījās ap 1 Mbps, kas padarīja normālu lietošanu neiespējamu.</p>
-            <p id="story-p3">Galu galā tika pieņemts lēmums iegādāties Starlink antenu. Izmantojot mobilās lietotnes norādes, pats visu saliku dažu minūšu laikā. Rezultāts? Tagad mājās ir stabili <strong>100+ Mbps</strong> pat spēcīgā sniegā un vētrās. Pieslēgtas arī novērošanas kameras caur internetu, un nav bijusi <strong>ne viena diena</strong>, kad būtu pazuduši sakari, kā tas regulāri notika ar mobilo tīklu.</p>
+            <p id="story-p1">Daudzus gadus pierobežā izmantoju LMT pakalpojumus. Sakaru situācija bija <strong>ārkārtīgi smaga</strong> — 2G tīkls tikko vilka. Lai mājā vispār būtu kāds savienojums, nācās uzstādīt <strong>2 ārējās antenas</strong> un mēnešiem ilgi tās grozīt (pa dienu pret vienu torni, vakarā pret citu). Viss šis kabeļu murgs vilkās <strong>veselu gadu</strong>, jo mobilie torņi bija pārāk tālu.</p>
+            <p id="story-p2">Pat ar divām papildu antenām izdevās izspiest labākajā gadījumā 5–10 Mbps, bet pārsvarā <strong>reālais ātrums bija švaks 1 Mbps</strong>, padarot interneta lietošanu un darbu neiespējamu.</p>
+            <p id="story-p3">Galu galā tika pieņemts lēmums iegādāties <strong>Starlink antenu</strong>. Rezultāts? Tagad mājās ir <strong>stabili 100+ Mbps pat spēcīgā sniegā un vētrās!</strong> Ir pieslēgtas novērošanas kameras caur internetu, un nav bijusi <strong>NE VIENA DIENA, kad būtu pazuduši sakari</strong>, kā tas regulāri notika ar mobilo tīklu.</p>
             <div class="highlight-box" id="story-box">
-                💡 Secinājums: Ja atrodaties tālu no mobilā operatora torņa vai pierobežā, mobilās antenas bieži vien ir tikai naudas un laika izšķērdēšana. Starlink šādos apstākļos ir vienīgais pilnvērtīgais risinājums.
+                💡 Secinājums: Ja atrodaties tālu no torņa vai pierobežā, dārgas mobilās antenas bieži ir tikai naudas un laika izšķērdēšana. Starlink šādos apstākļos ir vienīgais reālais un pilnvērtīgais risinājums!
             </div>
         </div>
 
-        <h2 class="section-title" id="sec-local">Lauku Interneta Tehnoloģiju Salīdzinājums</h2>
+        <h2 class="section-title" id="sec-local">📊 Lauku Interneta Tehnoloģiju Salīdzinājums</h2>
         <div class="table-wrapper">
             <table>
                 <thead>
@@ -124,19 +124,19 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Starlink Satelīts</strong></td>
-                        <td>100 - 200 Mbps</td>
-                        <td>Izcila (Neietekmē torņu attālums)</td>
-                        <td><strong>Labākā izvēle viensētām</strong></td>
+                        <td><strong>🚀 Starlink Satelīts</strong></td>
+                        <td><strong>100 - 200 Mbps</strong></td>
+                        <td><strong>Izcila</strong> (Neietekmē torņu attālums)</td>
+                        <td><strong>🥇 Vislabākā izvēle viensētām</strong></td>
                     </tr>
                     <tr>
-                        <td><strong>LMT (Mobilais 4G/5G)</strong></td>
+                        <td><strong>📱 LMT (Mobilais 4G/5G)</strong></td>
                         <td>1 - 15 Mbps (Tālu no torņa)</td>
                         <td>Zema/Mainīga (Jāuzstāda ārējās antenas)</td>
-                        <td>Piemērots, ja tornis ir tuvumā</td>
+                        <td>Piemērots, ja tornis ir ļoti tuvu</td>
                     </tr>
                     <tr>
-                        <td><strong>Tele2 / Bite (Mobilais)</strong></td>
+                        <td><strong>📱 Tele2 / Bite (Mobilais)</strong></td>
                         <td>1 - 20 Mbps (Tālu no torņa)</td>
                         <td>Zema/Mainīga (Atkarīgs no noslodzes)</td>
                         <td>Piemērots ciematos un pilsētu tuvumā</td>
@@ -145,51 +145,51 @@
             </table>
         </div>
 
-        <h2 class="section-title" id="sec-faq">Biežāk Uzdotie Jautājumi un Tehniskās Nianses</h2>
+        <h2 class="section-title" id="sec-faq">❓ Biežāk Uzdotie Jautājumi un Tehniskās Nianses</h2>
         
         <div class="faq-item">
-            <h4 id="faq-data-q">Vai Starlink piedāvā neierobežotus (bezlīmita) datus?</h4>
-            <p id="faq-data-a">Jā! Starlink Standard (Residential) tarifa plāns nodrošina pilnīgi neierobežotu datu apjomu. Nav nekādu mēneša patēriņa griestu — varat straumēt 4K video, lejupielādēt lielus failus un turēt pieslēgtas kameras visu diennakti bez bažām par interneta izbeigšanos.</p>
+            <h4 id="faq-data-q">♾️ Vai Starlink piedāvā neierobežotus (bezlīmita) datus?</h4>
+            <p id="faq-data-a">Jā! Starlink Standard (Residential) plāns nodrošina <strong>pilnīgi neierobežotu datu apjomu</strong>. Nav nekādu mēneša patēriņa griestu — varat straumēt 4K video, lejupielādēt failus un turēt novērošanas kameras pieslēgtas 24/7 bez bažām.</p>
         </div>
 
         <div class="faq-item">
-            <h4 id="faq-obs-q">Vai koki un šķēršļi (Obstructions) ietekmē stabilitāti?</h4>
-            <p id="faq-obs-a">Starlink mobilajā lietotnē ir rīks, kas mēra šķēršļus. Praksē pārbaudīts: pat ar aptuveni 18% šķēršļu (Obstruction) līmeni viensētā apkārtējo koku dēļ, internets strādā nemainīgi stabili un lietošanā nekādi pārtraukumi nav manāmi.</p>
+            <h4 id="faq-obs-q">🌲 Vai koki un šķēršļi (Obstructions) ietekmē stabilitāti?</h4>
+            <p id="faq-obs-a">Praksē pārbaudīts: pat ar aptuveni <strong>18% šķēršļu (Obstruction) līmeni</strong> viensētā apkārtējo koku dēļ, internets strādā <strong>nemainīgi stabili</strong> un reālajā lietošanā nekādi traucējumi nav manāmi.</p>
         </div>
 
         <div class="faq-item">
-            <h4 id="faq-shipping-q">Cik ilgi aizņem piegāde no pasūtīšanas brīža?</h4>
-            <p id="faq-shipping-a">Piegādes laiks var atšķirties no reģiona. Piemēram, pasūtot uz Rīgu, iekārta atnāca 2 nedēļu laikā (pēc tam profila iestatījumos adresi viegli nomainījām uz faktisko uzstādīšanas vietu laukos). Citu sūtījumu tieši uz lauku adresi saņēmām jau 8 dienu laikā.</p>
+            <h4 id="faq-shipping-q">📦 Cik ilgi aizņem piegāde no pasūtīšanas brīža?</h4>
+            <p id="faq-shipping-a">Piegāde ir ātra: pasūtot uz Rīgu, iekārta atnāca <strong>2 nedēļu laikā</strong> (pēc tam profila iestatījumos adresi nomainījām uz lauku māju). Citu sūtījumu tieši uz lauku adresi saņēmām jau <strong>8 dienu laikā!</strong></p>
         </div>
 
         <div class="faq-item">
-            <h4 id="faq-rent-q">Kas notiek ar īrēto iekārtu, ja atceļ pieteikumu?</h4>
-            <p id="faq-rent-a">Ja izvēlaties Starlink iekārtu īrēt (piemēram, par 10 €/mēn.) un kādā brīdī nolemjat pakalpojumu atcelt, ierīce (antena un rūteris) obligāti jāatgriež/jānosūta atpakaļ Starlink.</p>
+            <h4 id="faq-rent-q">🔄 Kas notiek ar īrēto iekārtu, ja atceļ pieteikumu?</h4>
+            <p id="faq-rent-a">Ja izvēlaties iekārtu īrēt (par 10 €/mēn.) un kādā brīdī nolemjat pakalpojumu atcelt, ierīce (antena un rūteris) ir jāatgriež/jānosūta atpakaļ Starlink.</p>
         </div>
 
         <div class="faq-item">
-            <h4 id="faq1-q">Vai Starlink strādā ziemā, sniegā un spēcīgā vējā?</h4>
-            <p id="faq1-a">Jā! Starlink antenām ir iebūvēta apsildes funkcija, kas kausē sniegu un ledu. Pieredze rāda, ka arī spēcīgās vētrās un sniegputenī savienojums paliek stabils un kameras/internets nepazūd.</p>
+            <h4 id="faq1-q">❄️ Vai Starlink strādā ziemā, sniegā un spēcīgā vējā?</h4>
+            <p id="faq1-a">Jā! Starlink antenām ir <strong>iebūvēta automātiskā apsildes funkcija</strong>, kas kausē sniegu un ledu. Pieredze rāda, ka arī spēcīgās vētrās un sniegputenī savienojums paliek stabils.</p>
         </div>
 
         <div class="faq-item">
-            <h4 id="faq-ping-q">Kāds ir ping (aizkave) un vai var spēlēt tiešsaistes datorspēles?</h4>
-            <p id="faq-ping-a">Latvijā ping visbiežāk ir ap 20–60 ms. Taču jārēķinās, ka satelīti debesīs nepārtraukti kustas un mainās, tāpēc ping atsevišķos brīžos var nedaudz lēkāt. Ar to ir pilnīgi pietiekami ikdienas spēlēm, Zoom un YouTube 4K, taču ļoti ātrām e-sporta spēlēm piemērotāka būs pilsētas optika.</p>
+            <h4 id="faq-ping-q">⚡ Kāds ir ping (aizkave) un vai var spēlēt tiešsaistes datorspēles?</h4>
+            <p id="faq-ping-a">Latvijā ping visbiežāk ir ap <strong>20–60 ms</strong>. Tā kā satelīti debesīs kustas, ping var nedaudz lēkāt, taču ar to ir pilnīgi pietiekami ikdienas spēlēm, Zoom zvaniem un 4K video.</p>
         </div>
 
         <div class="faq-item">
-            <h4 id="faq-power-q">Cik daudz elektrības patērē Starlink?</h4>
-            <p id="faq-power-a">Parastā darba režīmā patēriņš ir aptuveni 30–50 W. Ziemas laikā, kad automātiski ieslēdzas antenas apsilde sniega kausēšanai, patēriņš var īslaicīgi pieaugt līdz 70–85 W.</p>
+            <h4 id="faq-power-q">🔌 Cik daudz elektrības patērē Starlink?</h4>
+            <p id="faq-power-a">Parastā darba režīmā patēriņš ir aptuveni <strong>30–50 W</strong>. Ziemas laikā, kad ieslēdzas apsilde sniega kausēšanai, patēriņš var īslaicīgi pieaugt līdz 70–85 W.</p>
         </div>
 
         <div class="faq-item">
-            <h4 id="faq-router-q">Vai varu pieslēgt savu rūteri (piemēram, MikroTik)?</h4>
-            <p id="faq-router-a">Jā! Starlink lietotnes iestatījumos var ieslēgt "Bypass Mode". Tas atslēdz iebūvēto Starlink Wi-Fi un ļauj pieslēgt jebkuru savu jaudīgo rūteri lielākai mājas platībai.</p>
+            <h4 id="faq-router-q">📶 Vai varu pieslēgt savu rūteri (piemēram, MikroTik)?</h4>
+            <p id="faq-router-a">Jā! Starlink lietotnes iestatījumos var ieslēgt <strong>"Bypass Mode"</strong>, atslēdzot iebūvēto Wi-Fi un pieslēdzot jebkuru savu jaudīgo rūteri lielākai mājas platībai.</p>
         </div>
 
         <div class="faq-item">
-            <h4 id="faq2-q">Kā strādā 1 mēneša bezmaksas ieteikuma (referral) saite?</h4>
-            <p id="faq2-a">Pasūtot Starlink caur mūsu saiti, pirmais mēnesis tiek apmaksāts parastajā kārtībā. Pēc 30 dienām no aktivizācijas brīža Starlink jūsu kontam automātiski piešķirs nākamā mēneša pakalpojumu bez maksas.</p>
+            <h4 id="faq2-q">🎁 Kā strādā 1 mēneša bezmaksas ieteikuma (referral) saite?</h4>
+            <p id="faq2-a">Pasūtot Starlink caur mūsu saiti, pirmais mēnesis tiek apmaksāts kā parasti. Pēc 30 dienām no aktivizācijas brīža Starlink jūsu kontam <strong>automātiski piešķirs nākamo mēnesi BEZ MAKSAS!</strong></p>
         </div>
 
     </div>
@@ -202,94 +202,94 @@
     <script>
         const translations = {
             lv: {
-                title: "Labākais Internets Laukiem un Pierobežai",
+                title: "📡 Labākais Internets Laukiem un Pierobežai",
                 subtitle: "Kā iegūt mobilajam tīklam nepieejamu internetu viensētā vai lauku mājā.",
                 storyTitle: "📖 Reāla Pieredze: No 1 Mbps ar 2 Antenām līdz Stabilam Starlink",
-                storyP1: "Daudzus gadus pierobežā izmantoju LMT pakalpojumus. Sakaru situācija bija labai smaga — 2G tīkls tikko vilka, un, lai mājā vispār dabūtu kādu internetu, nācās uzstādīt 2 ārējās antenas. Mēnešiem ilgi tās nācās grozīt, pa dienu pavēršot pret vienu torni, vakarā pret citu. Viss šis kabeļu un antenu murgs vilkās veselu gadu, jo mobilie torņi atradās pārāk tālu un tuvāk neviena cita operatora nebija.",
-                storyP2: "Pat ar divām papildu antenām izdevās izspiest labākajā gadījumā 5–10 Mbps (un tikai tad, ja mājās neviens cits internetu nelietoja). Pārsvarā reālais ātrums svārstījās ap 1 Mbps, kas padarīja normālu lietošanu neiespējamu.",
-                storyP3: "Galu galā tika pieņemts lēmums iegādāties Starlink antenu. Izmantojot mobilās lietotnes norādes, pats visu saliku dažu minūšu laikā. Rezultāts? Tagad mājās ir stabili 100+ Mbps pat spēcīgā sniegā un vētrās. Pieslēgtas arī novērošanas kameras caur internetu, un nav bijusi ne viena diena, kad būtu pazuduši sakari, kā tas regulāri notika ar mobilo tīklu.",
-                storyBox: "💡 Secinājums: Ja atrodaties tālu no mobilā operatora torņa vai pierobežā, mobilās antenas bieži vien ir tikai naudas un laika izšķērdēšana. Starlink šādos apstākļos ir vienīgais pilnvērtīgais risinājums.",
+                storyP1: "Daudzus gadus pierobežā izmantoju LMT pakalpojumus. Sakaru situācija bija <strong>ārkārtīgi smaga</strong> — 2G tīkls tikko vilka. Lai mājā vispār būtu kāds savienojums, nācās uzstādīt <strong>2 ārējās antenas</strong> un mēnešiem ilgi tās grozīt (pa dienu pret vienu torni, vakarā pret citu). Viss šis kabeļu murgs vilkās <strong>veselu gadu</strong>, jo mobilie torņi bija pārāk tālu.",
+                storyP2: "Pat ar divām papildu antenām izdevās izspiest labākajā gadījumā 5–10 Mbps, bet pārsvarā <strong>reālais ātrums bija švaks 1 Mbps</strong>, padarot interneta lietošanu un darbu neiespējamu.",
+                storyP3: "Galu galā tika pieņemts lēmums iegādāties <strong>Starlink antenu</strong>. Rezultāts? Tagad mājās ir <strong>stabili 100+ Mbps pat spēcīgā sniegā un vētrās!</strong> Ir pieslēgtas novērošanas kameras caur internetu, un nav bijusi <strong>NE VIENA DIENA, kad būtu pazuduši sakari</strong>, kā tas regulāri notika ar mobilo tīklu.",
+                storyBox: "💡 Secinājums: Ja atrodaties tālu no torņa vai pierobežā, dārgas mobilās antenas bieži ir tikai naudas un laika izšķērdēšana. Starlink šādos apstākļos ir vienīgais reālais un pilnvērtīgais risinājums!",
                 slTitle: "🚀 Starlink Satelīta Internets Latvijā",
-                slDesc: "Starlink nodrošina ātru un mobilajam tīklam nepakļautu internetu jebkurā vietā Latvijā. Pasūtīšanu varat veikt paši – nekādi starpnieki vai dārgi partneri nav vajadzīgi!",
-                slF1: "<strong>Valoda:</strong> Starlink atbalsts ir angļu/krievu valodā (ja saprotat tikai latviski, var izmantot tulkotāju).",
-                slF2: "<strong>Uzstādīšana:</strong> Antenu uzstādīt caur lietotni ir ļoti vienkārši un ātri.",
-                slF3: "<strong>Kabeļu nianses:</strong> Mini modelim starp antenu un rūteri var būt nepieciešams papildu LAN vads. Savukārt, ja izvēlaties <strong>4X (Standard)</strong> modeli, klāt papildus nekādi vadi nav jāpērk!",
-                slF4: "<strong>Cenas un Īre:</strong> Starlink sākotnēji piedāvā īri. Par ~100 Mbps ātrumu pakalpojums maksā 35 €/mēn. + 10 €/mēn. ierīces īre (kopā ~45 €/mēn. Par 4X modeli tie ir 45 € + 10 € īre).",
-                slF5: "<strong>Īpašais triks par izpirkšanu:</strong> Sazinoties ar Starlink supportu jau pirmajā mēnesī, izdevās saskaņot izpirkšanu uzreiz. Viņi izskaidroja, ka ierīce vairs automātiski nepāriet īpašumā pēc 12 mēnešiem (kā tas bija agrāk), taču viņi var sagatavot atsevišķu rēķinu, lai Mini komplektu uzreiz izpirktu par <strong>199 €</strong> ar oficiālu 2 gadu garantiju!",
-                slPromo: "🎁 ĪPAŠAIS PIEDĀVĀJUMS: Pasūti caur mūsu saiti un saņem 1 mēnesi bez maksas (pēc 30 dienām no aktivizācijas)!",
-                slBtn: "Pasūtīt Starlink & Saņemt 1 Mēnesi Bez Maksas →",
-                secLocal: "Lauku Interneta Tehnoloģiju Salīdzinājums",
+                slDesc: "Starlink nodrošina <strong>ātru un mobilajam tīklam nepakļautu internetu</strong> jebkurā vietā Latvijā. Pasūtīšanu varat veikt paši – <strong>nekādi starpnieki vai dārgi partneri nav vajadzīgi!</strong>",
+                slF1: "<strong>Valoda:</strong> Atbalsts un serviss ir angļu/krievu valodā (ja saprotat tikai latviski, var viegli izmantot tulkotāju).",
+                slF2: "<strong>Vienkārša Uzstādīšana:</strong> Antenu uzstādīt caur lietotni ir <strong>ļoti vienkārši un ātri</strong> – nekādu meistaru!",
+                slF3: "<strong>Kabeļu nianses:</strong> Mini modelim var būt nepieciešams papildu LAN vads. Savukārt, izvēloties <strong>4X (Standard)</strong> modeli, <strong>nekādi papildu vadi nav jāpērk!</strong>",
+                slF4: "<strong>Elastīgas Cenas:</strong> Par ~100 Mbps pakalpojums maksā 35 €/mēn. + 10 € īre (kopā ~45 €/mēn.). Par 4X modeli – 45 € + 10 € īre.",
+                slF5: "<strong>Īpašais triks par izpirkšanu:</strong> Sazinoties ar Starlink supportu pirmajā mēnesī, izdevās saskaņot <strong>izpirkšanu uzreiz</strong>. Viņi izveido atsevišķu rēķinu, lai Mini komplektu uzreiz izpirktu par <strong>199 €</strong> ar <strong>2 gadu garantiju!</strong>",
+                slPromo: "🎁 ĪPAŠAIS PIEDĀVĀJUMS: Pasūti caur mūsu saiti un saņem 1 MĒNESI BEZ MAKSAS (pēc 30 dienām no aktivizācijas)!",
+                slBtn: "👉 Pasūtīt Starlink & Saņemt 1 Mēnesi Bez Maksas →",
+                secLocal: "📊 Lauku Interneta Tehnoloģiju Salīdzinājums",
                 thOp: "Risinājums", thTech: "Vidējais Ātrums", thStab: "Stabilitāte Pierobežā / Laukos", thBest: "Mūsu Vērtējums",
-                secFaq: "Biežāk Uzdotie Jautājumi un Tehniskās Nianses",
-                faqDataQ: "Vai Starlink piedāvā neierobežotus (bezlīmita) datus?", faqDataA: "Jā! Starlink Standard (Residential) tarifa plāns nodrošina pilnīgi neierobežotu datu apjomu. Nav nekādu mēneša patēriņa griestu — varat straumēt 4K video, lejupielādēt lielus failus un turēt pieslēgtas kameras visu diennakti bez bažām par interneta izbeigšanos.",
-                faqObsQ: "Vai koki un šķēršļi (Obstructions) ietekmē stabilitāti?", faqObsA: "Starlink mobilajā lietotnē ir rīks, kas mēra šķēršļus. Praksē pārbaudīts: pat ar aptuveni 18% šķēršļu (Obstruction) līmeni viensētā apkārtējo koku dēļ, internets strādā nemainīgi stabili un lietošanā nekādi pārtraukumi nav manāmi.",
-                faqShippingQ: "Cik ilgi aizņem piegāde no pasūtīšanas brīža?", faqShippingA: "Piegādes laiks var atšķirties no reģiona. Piemēram, pasūtot uz Rīgu, iekārta atnāca 2 nedēļu laikā (pēc tam profila iestatījumos adresi viegli nomainījām uz faktisko uzstādīšanas vietu laukos). Citu sūtījumu tieši uz lauku adresi saņēmām jau 8 dienu laikā.",
-                faqRentQ: "Kas notiek ar īrēto iekārtu, ja atceļ pieteikumu?", faqRentA: "Ja izvēlaties Starlink iekārtu īrēt (piemēram, par 10 €/mēn.) un kādā brīdī nolemjat pakalpojumu atcelt, ierīce (antena un rūteris) obligāti jāatgriež/jānosūta atpakaļ Starlink.",
-                faq1Q: "Vai Starlink strādā ziemā, sniegā un spēcīgā vējā?", faq1A: "Jā! Starlink antenām ir iebūvēta apsildes funkcija, kas kausē sniegu un ledu. Pieredze rāda, ka arī spēcīgās vētrās un sniegputenī savienojums paliek stabils un kameras/internets nepazūd.",
-                faqPingQ: "Kāds ir ping (aizkave) un vai var spēlēt tiešsaistes datorspēles?", faqPingA: "Latvijā ping visbiežāk ir ap 20–60 ms. Taču jārēķinās, ka satelīti debesīs nepārtraukti kustas un mainās, tāpēc ping atsevišķos brīžos var nedaudz lēkāt. Ar to ir pilnīgi pietiekami ikdienas spēlēm, Zoom un YouTube 4K, taču ļoti ātrām e-sporta spēlēm piemērotāka būs pilsētas optika.",
-                faqPowerQ: "Cik daudz elektrības patērē Starlink?", faqPowerA: "Parastā darba režīmā patēriņš ir aptuveni 30–50 W. Ziemas laikā, kad automātiski ieslēdzas antenas apsilde sniega kausēšanai, patēriņš var īslaicīgi pieaugt līdz 70–85 W.",
-                faqRouterQ: "Vai varu pieslēgt savu rūteri (piemēram, MikroTik)?", faqRouterA: "Jā! Starlink lietotnes iestatījumos var ieslēgt \"Bypass Mode\". Tas atslēdz iebūvēto Starlink Wi-Fi un ļauj pieslēgt jebkuru savu jaudīgo rūteri lielākai mājas platībai.",
-                faq2Q: "Kā strādā 1 mēneša bezmaksas ieteikuma (referral) saite?", faq2A: "Pasūtot Starlink caur mūsu saiti, pirmais mēnesis tiek apmaksāts parastajā kārtībā. Pēc 30 dienām no aktivizācijas brīža Starlink jūsu kontam automātiski piešķirs nākamā mēneša pakalpojumu bez maksas."
+                secFaq: "❓ Biežāk Uzdotie Jautājumi un Tehniskās Nianses",
+                faqDataQ: "♾️ Vai Starlink piedāvā neierobežotus (bezlīmita) datus?", faqDataA: "Jā! Starlink Standard (Residential) plāns nodrošina <strong>pilnīgi neierobežotu datu apjomu</strong>. Nav nekādu mēneša patēriņa griestu — varat straumēt 4K video, lejupielādēt failus un turēt novērošanas kameras pieslēgtas 24/7 bez bažām.",
+                faqObsQ: "🌲 Vai koki un šķēršļi (Obstructions) ietekmē stabilitāti?", faqObsA: "Praksē pārbaudīts: pat ar aptuveni <strong>18% šķēršļu (Obstruction) līmeni</strong> viensētā apkārtējo koku dēļ, internets strādā <strong>nemainīgi stabili</strong> un reālajā lietošanā nekādi traucējumi nav manāmi.",
+                faqShippingQ: "📦 Cik ilgi aizņem piegāde no pasūtīšanas brīža?", faqShippingA: "Piegāde ir ātra: pasūtot uz Rīgu, iekārta atnāca <strong>2 nedēļu laikā</strong> (pēc tam profila iestatījumos adresi nomainījām uz lauku māju). Citu sūtījumu tieši uz lauku adresi saņēmām jau <strong>8 dienu laikā!</strong>",
+                faqRentQ: "🔄 Kas notiek ar īrēto iekārtu, ja atceļ pieteikumu?", faqRentA: "Ja izvēlaties iekārtu īrēt (par 10 €/mēn.) un kādā brīdī nolemjat pakalpojumu atcelt, ierīce (antena un rūteris) ir jāatgriež/jānosūta atpakaļ Starlink.",
+                faq1Q: "❄️ Vai Starlink strādā ziemā, sniegā un spēcīgā vējā?", faq1A: "Jā! Starlink antenām ir <strong>iebūvēta automātiskā apsildes funkcija</strong>, kas kausē sniegu un ledu. Pieredze rāda, ka arī spēcīgās vētrās un sniegputenī savienojums paliek stabils.",
+                faqPingQ: "⚡ Kāds ir ping (aizkave) un vai var spēlēt tiešsaistes datorspēles?", faqPingA: "Latvijā ping visbiežāk ir ap <strong>20–60 ms</strong>. Tā kā satelīti debesīs kustas, ping var nedaudz lēkāt, taču ar to ir pilnīgi pietiekami ikdienas spēlēm, Zoom zvaniem un 4K video.",
+                faqPowerQ: "🔌 Cik daudz elektrības patērē Starlink?", faqPowerA: "Parastā darba režīmā patēriņš ir aptuveni <strong>30–50 W</strong>. Ziemas laikā, kad ieslēdzas apsilde sniega kausēšanai, patēriņš var īslaicīgi pieaugt līdz 70–85 W.",
+                faqRouterQ: "📶 Vai varu pieslēgt savu rūteri (piemēram, MikroTik)?", faqRouterA: "Jā! Starlink lietotnes iestatījumos var ieslēgt <strong>\"Bypass Mode\"</strong>, atslēdzot iebūvēto Wi-Fi un pieslēdzot jebkuru savu jaudīgo rūteri lielākai mājas platībai.",
+                faq2Q: "🎁 Kā strādā 1 mēneša bezmaksas ieteikuma (referral) saite?", faq2A: "Pasūtot Starlink caur mūsu saiti, pirmais mēnesis tiek apmaksāts kā parasti. Pēc 30 dienām no aktivizācijas brīža Starlink jūsu kontam <strong>automātiski piešķirs nākamo mēnesi BEZ MAKSAS!</strong>"
             },
             en: {
-                title: "Best Internet for Rural & Border Areas in Latvia",
+                title: "📡 Best Internet for Rural & Border Areas in Latvia",
                 subtitle: "How to get internet in a countryside home where cell coverage fails.",
                 storyTitle: "📖 Real Experience: From 1 Mbps with 2 Antennas to Stable Starlink",
-                storyP1: "For many years I used LMT in the border area. The signal was terrible — barely getting 2G. To get any internet at all, I had to install 2 external antennas. For months I had to constantly adjust them — aiming at one tower during the day, another in the evening. This cable and antenna nightmare lasted a whole year because towers were too far away and no other mobile operators were available.",
-                storyP2: "Even with two external antennas, the best speed was 5–10 Mbps (and only if no one else was using the internet at home). Usually, real speed hovered around 1 Mbps, making normal usage impossible.",
-                storyP3: "Finally, I decided to buy a Starlink dish. Guided by the mobile app, I set everything up in minutes. The result? Now I have a stable 100+ Mbps even in heavy snow and storms. Security cameras are connected, and there hasn't been a single day of connection loss, unlike with the cellular network.",
-                storyBox: "💡 Conclusion: If you are far from cell towers or in border zones, 4G/5G antennas are often a waste of time and money. Starlink is the only complete solution in such conditions.",
+                storyP1: "For many years I used LMT in the border area. The signal was <strong>extremely poor</strong> — barely getting 2G. To get any connection, I installed <strong>2 external antennas</strong> and spent months adjusting them daily. This cable nightmare dragged on for a <strong>whole year</strong> because cell towers were too far away.",
+                storyP2: "Even with two external antennas, best speed was 5–10 Mbps, but mostly <strong>real speed was a weak 1 Mbps</strong>, making work and daily browsing impossible.",
+                storyP3: "Finally, I decided to buy a <strong>Starlink dish</strong>. The result? Now I have <strong>stable 100+ Mbps even in heavy snow and storms!</strong> Security cameras are connected, and there has been <strong>NOT A SINGLE DAY of connection loss</strong>.",
+                storyBox: "💡 Conclusion: If you are far from cell towers or in border zones, expensive 4G/5G antennas are a waste of time and money. Starlink is the only complete solution!",
                 slTitle: "🚀 Starlink Satellite Internet in Latvia",
-                slDesc: "Starlink provides fast satellite internet anywhere in Latvia. You can order directly — no expensive middlemen needed!",
-                slF1: "<strong>Language:</strong> Support is available in English/Russian (use a translator if needed).",
-                slF2: "<strong>Installation:</strong> Very easy and fast setup via the mobile app.",
-                slF3: "<strong>Cables:</strong> The Mini model might need an extra LAN cable to connect dish to router. The <strong>4X (Standard)</strong> model comes with all needed cables included!",
-                slF4: "<strong>Pricing & Rent:</strong> Starlink initially offers rental. ~100 Mbps costs €35/mo + €10/mo rental (~€45/mo total. For 4X model it is €45 + €10 rent).",
-                slF5: "<strong>Buyout Trick:</strong> When contacting Starlink support during the first month, we arranged an immediate buyout. They explained that equipment no longer automatically becomes your property after 12 months (as it used to), but they can issue an invoice to buy out the Mini kit immediately for <strong>€199</strong> with an official 2-year warranty!",
-                slPromo: "🎁 SPECIAL OFFER: Order via our referral link and get 1 month for FREE (30 days after activation)!",
-                slBtn: "Order Starlink & Get 1 Month Free →",
-                secLocal: "Rural Internet Technology Comparison",
+                slDesc: "Starlink provides <strong>fast and tower-independent internet</strong> anywhere in Latvia. You can order directly — <strong>no middlemen needed!</strong>",
+                slF1: "<strong>Language:</strong> Support is available in English/Russian.",
+                slF2: "<strong>Easy Setup:</strong> Mounting and setting up via the app is <strong>very simple and fast</strong> — no technicians required!",
+                slF3: "<strong>Cables:</strong> The Mini model may need an extra LAN cable. The <strong>4X (Standard)</strong> model comes with <strong>all cables included!</strong>",
+                slF4: "<strong>Flexible Pricing:</strong> ~100 Mbps costs €35/mo + €10 rental (~€45/mo total). For 4X model – €45 + €10 rent.",
+                slF5: "<strong>Buyout Trick:</strong> Contacting Starlink support in the first month allowed an <strong>immediate buyout</strong>. They issue an invoice to buy out the Mini kit for <strong>€199</strong> with a <strong>2-year warranty!</strong>",
+                slPromo: "🎁 SPECIAL OFFER: Order via our link and get 1 MONTH FOR FREE (30 days after activation)!",
+                slBtn: "👉 Order Starlink & Get 1 Month Free →",
+                secLocal: "📊 Rural Internet Technology Comparison",
                 thOp: "Solution", thTech: "Average Speed", thStab: "Stability in Rural Areas", thBest: "Our Rating",
-                secFaq: "Frequently Asked Questions & Technical Details",
-                faqDataQ: "Does Starlink provide unlimited data?", faqDataA: "Yes! The Starlink Standard (Residential) plan offers completely unlimited data. There are no monthly data caps — stream 4K video, download large files, and keep security cameras online 24/7 without worry.",
-                faqObsQ: "Do trees and obstructions affect stability?", faqObsA: "Tested in practice: even with about 18% Obstruction on a rural property due to surrounding trees, the internet remains consistently stable and no connection drops are noticed in daily use.",
-                faqShippingQ: "How long does delivery take after ordering?", faqShippingA: "Delivery times vary. Ordering to Riga took about 2 weeks (we then easily changed the address in profile settings to the rural home). Another order directly to a rural address arrived in just 8 days.",
-                faqRentQ: "What happens to rented equipment if service is canceled?", faqRentA: "If you choose to rent equipment (e.g. €10/mo) and cancel service later, the dish and router must be returned/shipped back to Starlink.",
-                faq1Q: "Does Starlink work in winter snow and heavy wind?", faq1A: "Yes! Starlink dishes have built-in heating that melts snow and ice. Experience proves connection stays solid even in severe storms.",
-                faqPingQ: "What is the ping (latency) and can you play online games?", faqPingA: "Ping in Latvia usually ranges between 20–60 ms. However, since satellites constantly orbit and hand off, ping can fluctuate slightly. It is great for casual gaming, YouTube 4K, and remote work.",
-                faqPowerQ: "How much electricity does Starlink consume?", faqPowerA: "In normal operation, it draws about 30–50 W. During winter, when the automatic snow-melting heater turns on, power draw can briefly reach 70–85 W.",
-                faqRouterQ: "Can I connect my own router (e.g., MikroTik)?", faqRouterA: "Yes! Enable \"Bypass Mode\" in the Starlink app settings to disable the built-in Wi-Fi router and connect your own high-power router for larger properties.",
-                faq2Q: "How does the 1-month free referral offer work?", faq2A: "When ordering via our link, you pay the 1st month as usual. 30 days after activation, Starlink automatically credits 1 free month of service."
+                secFaq: "❓ Frequently Asked Questions & Technical Details",
+                faqDataQ: "♾️ Does Starlink provide unlimited data?", faqDataA: "Yes! The Starlink Standard plan offers <strong>completely unlimited data</strong>. There are no monthly data caps — stream 4K video and keep security cameras online 24/7.",
+                faqObsQ: "🌲 Do trees and obstructions affect stability?", faqObsA: "Tested in practice: even with about <strong>18% Obstruction</strong> due to surrounding trees, the internet remains <strong>consistently stable</strong>.",
+                faqShippingQ: "📦 How long does delivery take after ordering?", faqShippingA: "Delivery is fast: ordering to Riga took <strong>2 weeks</strong> (then changed address in profile). Another order directly to a rural property arrived in just <strong>8 days!</strong>",
+                faqRentQ: "🔄 What happens to rented equipment if service is canceled?", faqRentA: "If you choose to rent (€10/mo) and cancel later, the equipment must be returned to Starlink.",
+                faq1Q: "❄️ Does Starlink work in winter snow and heavy wind?", faq1A: "Yes! Starlink dishes have <strong>built-in automatic heating</strong> that melts snow and ice.",
+                faqPingQ: "⚡ What is the ping (latency) and can you play online games?", faqPingA: "Ping in Latvia is usually around <strong>20–60 ms</strong>, perfectly fine for casual gaming, Zoom calls, and 4K video.",
+                faqPowerQ: "🔌 How much electricity does Starlink consume?", faqPowerA: "In normal operation, it draws about <strong>30–50 W</strong>. In winter during snow heating, it briefly reaches 70–85 W.",
+                faqRouterQ: "📶 Can I connect my own router (e.g., MikroTik)?", faqRouterA: "Yes! Enable <strong>\"Bypass Mode\"</strong> in settings to connect your own high-power router.",
+                faq2Q: "🎁 How does the 1-month free referral offer work?", faq2A: "Ordering via our link credits <strong>1 month FOR FREE</strong> to your account 30 days after activation!"
             },
             ru: {
-                title: "Лучший интернет для хуторов и приграничья в Латвии",
+                title: "📡 Лучший интернет для хуторов и приграничья в Латвии",
                 subtitle: "Как получить стабильный интернет в загородном доме, если мобильная связь не ловит.",
                 storyTitle: "📖 Реальный опыт: От 1 Мбит/с с 2 антеннами до стабильного Starlink",
-                storyP1: "Много лет в приграничной зоне я пользовался услугами LMT. Связь была ужасной — еле ловил 2G. Чтобы получить хоть какой-то интернет, пришлось установить 2 внешние антенны. Месяцами крутил их: днем на одну вышку, вечером на другую. Этот кошмар с кабелями длился целый год, так как вышки слишком далеко, а других операторов рядом нет.",
-                storyP2: "Даже с двумя внешними антеннами максимум удавалось выжать 5–10 Мбит/с (и только если никто дома больше не сидел в интернете). В основном реальная скорость была около 1 Мбит/с.",
-                storyP3: "В итоге купил антенну Starlink. По подсказкам в приложении настроил все за пару минут. Результат? Сейчас в доме стабильно 100+ Мбит/с даже в сильный снегопад и бурю. Подключены камеры видеонаблюдения, и не было ни одного дня обрыва связи.",
-                storyBox: "💡 Вывод: Если вы далеко от вышки или в приграничье, мобильные антенны — это пустая трата денег. Starlink — единственное полноценное решение в таких условиях.",
+                storyP1: "Много лет в приграничной зоне я пользовался услугами LMT. Связь была <strong>ужасной</strong> — еле ловил 2G. Пришлось установить 2 внешние антенны и месяцами крутить их. Этот кошмар длился <strong>целый год</strong>, так как вышки слишком далеко.",
+                storyP2: "Даже с двумя антеннами <strong>реальная скорость была слабые 1 Мбит/с</strong>, что делало работу и нормальное пользование невозможным.",
+                storyP3: "В итоге купил <strong>антенну Starlink</strong>. Результат? Сейчас в доме <strong>стабильно 100+ Мбит/с даже в сильный снегопад!</strong> Подключены камеры, и не было <strong>НИ ОДНОГО ДНЯ обрыва связи</strong>.",
+                storyBox: "💡 Вывод: Если вы далеко от вышки, дорогие мобильные антенны — это пустая трата денег. Starlink — единственное полноценное решение!",
                 slTitle: "🚀 Спутниковый интернет Starlink в Латвии",
-                slDesc: "Starlink обеспечивает быстрый интернет в любой точке Латвии. Заказать можно самостоятельно — посредники не нужны!",
+                slDesc: "Starlink обеспечивает <strong>быстрый и независимый от вышек интернет</strong> в любой точке Латвии. Заказать можно самостоятельно — <strong>посредники не нужны!</strong>",
                 slF1: "<strong>Язык:</strong> Поддержка доступна на английском и русском языках.",
-                slF2: "<strong>Установка:</strong> Простая и быстрая настройка через приложение.",
-                slF3: "<strong>Кабели:</strong> Для модели Mini может потребоваться дополнительный LAN-кабель. В комплекте <strong>4X (Standard)</strong> уже есть все необходимые кабели!",
-                slF4: "<strong>Цены и аренда:</strong> Сначала идет аренда. Услуга стоит 35 €/мес. + 10 €/мес. аренда (~45 €/мес. Для модели 4X — 45 € + 10 € аренда).",
-                slF5: "<strong>Секрет выкупа:</strong> Связавшись с поддержкой Starlink в первый же месяц, удалось выкупить комплект сразу. Они объяснили, что устройство больше не переходит автоматически в собственность через 12 месяцев (как раньше), но они могут выставить счет для выкупа Mini kit за <strong>199 €</strong> с гарантией на 2 года!",
-                slPromo: "🎁 СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ: Закажите по нашей ссылке и получите 1 месяц БЕСПЛАТНО (через 30 дней после активации)!",
-                slBtn: "Заказать Starlink и получить 1 месяц бесплатно →",
-                secLocal: "Сравнение технологий интернета для загородных домов",
+                slF2: "<strong>Простая Установка:</strong> Настроить через приложение <strong>очень просто и быстро</strong> — мастера не нужны!",
+                slF3: "<strong>Кабели:</strong> Для Mini может потребоваться LAN-кабель. В комплекте <strong>4X (Standard)</strong> уже <strong>есть все кабели!</strong>",
+                slF4: "<strong>Гибкие Цены:</strong> Услуга стоит 35 €/мес. + 10 € аренда (~45 €/мес. Для 4X — 45 € + 10 € аренда).",
+                slF5: "<strong>Секрет выкупа:</strong> Связавшись с поддержкой в первый месяц, удалось выкупить комплект сразу. Они выставляют счет для выкупа Mini kit за <strong>199 €</strong> с <strong>гарантией на 2 года!</strong>",
+                slPromo: "🎁 СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ: Закажите по нашей ссылке и получите 1 МЕСЯЦ БЕСПЛАТНО (через 30 дней после активации)!",
+                slBtn: "👉 Заказать Starlink и получить 1 месяц бесплатно →",
+                secLocal: "📊 Сравнение технологий интернета для загородных домов",
                 thOp: "Решение", thTech: "Средняя скорость", thStab: "Стабильность на хуторе", thBest: "Наша оценка",
-                secFaq: "Часто задаваемые вопросы и технические нюансы",
-                faqDataQ: "Предоставляет ли Starlink безлимитный интернет?", faqDataA: "Да! Тариф Standard (Residential) предоставляет полностью безлимитный трафик без ограничений по объему. Можно качать крупные файлы, смотреть 4K и держать включенными камеры 24/7.",
-                faqObsQ: "Влияют ли деревья и препятствия (Obstructions) на стабильность?", faqObsA: "Проверено на практике: даже при уровне препятствий около 18% (Obstruction) из-за деревьев около хутора, интернет работает стабильно и обрывов не ощущается.",
-                faqShippingQ: "Сколько времени занимает доставка с момента заказа?", faqShippingA: "Сроки доставки варьируются. Заказ в Ригу пришел за 2 недели (затем адрес сменили в профиле на сельский дом). Другой заказ прямо на сельский адрес пришел уже за 8 дней.",
-                faqRentQ: "Что происходит с арендованным оборудованием при отмене?", faqRentA: "Если вы берете оборудование в аренду (за 10 €/мес.) и отменяете услугу, антенну и роутер необходимо вернуть (отправить) обратно в Starlink.",
-                faq1Q: "Работает ли Starlink зимой в снегопад и сильный ветер?", faq1A: "Да! В антенны Starlink встроен подогрев, растапливающий снег и лед. Практика показывает, что связь остается стабильной даже в сильные бури.",
-                faqPingQ: "Какой пинг (задержка) и можно ли играть в онлайн-игры?", faqPingA: "В Латвии пинг обычно составляет 20–60 мс. Однако нужно учитывать, что спутники постоянно движутся, поэтому пинг может немного скакать. Этого вполне достаточно для обычных игр, Zoom и YouTube 4K.",
-                faqPowerQ: "Сколько электричества потребляет Starlink?", faqPowerA: "В обычном режиме потребление составляет около 30–50 Вт. Зимой при включении подогрева потребление может кратковременно подниматься до 70–85 W.",
-                faqRouterQ: "Можно ли подключить свой роутер (например, MikroTik)?", faqRouterA: "Да! В настройках приложения Starlink можно включить \"Bypass Mode\". Это отключит встроенный Wi-Fi роутер Starlink и позволит подключить любой ваш мощный роутер.",
-                faq2Q: "Как работает 1 бесплатный месяц по ссылке?", faq2A: "При заказе по нашей ссылке первый месяц оплачивается как обычно. Через 30 дней после активации Starlink автоматически зачислит 1 месяц бесплатной услуги."
+                secFaq: "❓ Часто задаваемые вопросы и технические нюансы",
+                faqDataQ: "♾️ Предоставляет ли Starlink безлимитный интернет?", faqDataA: "Да! Тариф Standard предоставляет <strong>полностью безлимитный трафик</strong> без ограничений по объему.",
+                faqObsQ: "🌲 Влияют ли деревья и препятствия (Obstructions) на стабильность?", faqObsA: "Проверено на практике: даже при уровне препятствий около <strong>18% (Obstruction)</strong> из-за деревьев, интернет работает <strong>стабильно</strong>.",
+                faqShippingQ: "📦 Сколько времени занимает доставка с момента заказа?", faqShippingA: "Доставка быстрая: заказ в Ригу пришел за <strong>2 недели</strong>, а заказ прямо на сельский адрес — всего за <strong>8 дней!</strong>",
+                faqRentQ: "🔄 Что происходит с арендованным оборудованием при отмене?", faqRentA: "Если вы берете оборудование в аренду и отменяете услугу, технику нужно вернуть в Starlink.",
+                faq1Q: "❄️ Работает ли Starlink зимой в снегопад и сильный ветер?", faq1A: "Да! В антенны Starlink встроен <strong>автоматический подогрев</strong>, растапливающий снег и лед.",
+                faqPingQ: "⚡ Какой пинг (задержка) и можно ли играть в онлайн-игры?", faqPingA: "Пинг обычно составляет <strong>20–60 мс</strong>, этого вполне достаточно для обычных игр, Zoom и YouTube 4K.",
+                faqPowerQ: "🔌 Сколько электричества потребляет Starlink?", faqPowerA: "В обычном режиме потребление составляет около <strong>30–50 Вт</strong>. Зимой при включении подогрева кратковременно поднимается до 70–85 Вт.",
+                faqRouterQ: "📶 Можно ли подключить свой роутер (например, MikroTik)?", faqRouterA: "Да! В настройках можно включить <strong>\"Bypass Mode\"</strong> и подключить любой свой роутер.",
+                faq2Q: "🎁 Как работает 1 бесплатный месяц по ссылке?", faq2A: "При заказе по нашей ссылке вы получаете <strong>1 месяц БЕСПЛАТНО</strong> через 30 дней после активации!"
             }
         };
 
@@ -298,46 +298,46 @@
             event.target.classList.add('active');
 
             const t = translations[lang];
-            document.getElementById('title').innerText = t.title;
-            document.getElementById('subtitle').innerText = t.subtitle;
-            document.getElementById('sl-title').innerText = t.slTitle;
-            document.getElementById('sl-desc').innerText = t.slDesc;
+            document.getElementById('title').innerHTML = t.title;
+            document.getElementById('subtitle').innerHTML = t.subtitle;
+            document.getElementById('sl-title').innerHTML = t.slTitle;
+            document.getElementById('sl-desc').innerHTML = t.slDesc;
             document.getElementById('sl-feat-1').innerHTML = t.slF1;
             document.getElementById('sl-feat-2').innerHTML = t.slF2;
             document.getElementById('sl-feat-3').innerHTML = t.slF3;
             document.getElementById('sl-feat-4').innerHTML = t.slF4;
             document.getElementById('sl-feat-5').innerHTML = t.slF5;
-            document.getElementById('sl-promo-text').innerText = t.slPromo;
-            document.getElementById('sl-btn').innerText = t.slBtn;
-            document.getElementById('story-title').innerText = t.storyTitle;
-            document.getElementById('story-p1').innerText = t.storyP1;
-            document.getElementById('story-p2').innerText = t.storyP2;
-            document.getElementById('story-p3').innerText = t.storyP3;
-            document.getElementById('story-box').innerText = t.storyBox;
-            document.getElementById('sec-local').innerText = t.secLocal;
-            document.getElementById('th-op').innerText = t.thOp;
-            document.getElementById('th-tech').innerText = t.thTech;
-            document.getElementById('th-stab').innerText = t.thStab;
-            document.getElementById('th-best').innerText = t.thBest;
-            document.getElementById('sec-faq').innerText = t.secFaq;
-            document.getElementById('faq-data-q').innerText = t.faqDataQ;
-            document.getElementById('faq-data-a').innerText = t.faqDataA;
-            document.getElementById('faq-obs-q').innerText = t.faqObsQ;
-            document.getElementById('faq-obs-a').innerText = t.faqObsA;
-            document.getElementById('faq-shipping-q').innerText = t.faqShippingQ;
-            document.getElementById('faq-shipping-a').innerText = t.faqShippingA;
-            document.getElementById('faq-rent-q').innerText = t.faqRentQ;
-            document.getElementById('faq-rent-a').innerText = t.faqRentA;
-            document.getElementById('faq1-q').innerText = t.faq1Q;
-            document.getElementById('faq1-a').innerText = t.faq1A;
-            document.getElementById('faq-ping-q').innerText = t.faqPingQ;
-            document.getElementById('faq-ping-a').innerText = t.faqPingA;
-            document.getElementById('faq-power-q').innerText = t.faqPowerQ;
-            document.getElementById('faq-power-a').innerText = t.faqPowerA;
-            document.getElementById('faq-router-q').innerText = t.faqRouterQ;
-            document.getElementById('faq-router-a').innerText = t.faqRouterA;
-            document.getElementById('faq2-q').innerText = t.faq2Q;
-            document.getElementById('faq2-a').innerText = t.faq2A;
+            document.getElementById('sl-promo-text').innerHTML = t.slPromo;
+            document.getElementById('sl-btn').innerHTML = t.slBtn;
+            document.getElementById('story-title').innerHTML = t.storyTitle;
+            document.getElementById('story-p1').innerHTML = t.storyP1;
+            document.getElementById('story-p2').innerHTML = t.storyP2;
+            document.getElementById('story-p3').innerHTML = t.storyP3;
+            document.getElementById('story-box').innerHTML = t.storyBox;
+            document.getElementById('sec-local').innerHTML = t.secLocal;
+            document.getElementById('th-op').innerHTML = t.thOp;
+            document.getElementById('th-tech').innerHTML = t.thTech;
+            document.getElementById('th-stab').innerHTML = t.thStab;
+            document.getElementById('th-best').innerHTML = t.thBest;
+            document.getElementById('sec-faq').innerHTML = t.secFaq;
+            document.getElementById('faq-data-q').innerHTML = t.faqDataQ;
+            document.getElementById('faq-data-a').innerHTML = t.faqDataA;
+            document.getElementById('faq-obs-q').innerHTML = t.faqObsQ;
+            document.getElementById('faq-obs-a').innerHTML = t.faqObsA;
+            document.getElementById('faq-shipping-q').innerHTML = t.faqShippingQ;
+            document.getElementById('faq-shipping-a').innerHTML = t.faqShippingA;
+            document.getElementById('faq-rent-q').innerHTML = t.faqRentQ;
+            document.getElementById('faq-rent-a').innerHTML = t.faqRentA;
+            document.getElementById('faq1-q').innerHTML = t.faq1Q;
+            document.getElementById('faq1-a').innerHTML = t.faq1A;
+            document.getElementById('faq-ping-q').innerHTML = t.faqPingQ;
+            document.getElementById('faq-ping-a').innerHTML = t.faqPingA;
+            document.getElementById('faq-power-q').innerHTML = t.faqPowerQ;
+            document.getElementById('faq-power-a').innerHTML = t.faqPowerA;
+            document.getElementById('faq-router-q').innerHTML = t.faqRouterQ;
+            document.getElementById('faq-router-a').innerHTML = t.faqRouterA;
+            document.getElementById('faq2-q').innerHTML = t.faq2Q;
+            document.getElementById('faq2-a').innerHTML = t.faq2A;
         }
     </script>
 </body>
